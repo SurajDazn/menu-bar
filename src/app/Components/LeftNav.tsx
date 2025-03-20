@@ -21,7 +21,6 @@ export default function LeftNav({ isOpen, toggleNav }: LeftNavProps) {
 
   return (
     <>
-      {/* Navigation sidebar - 15% width on desktop, overlay on mobile */}
       <div className={`
         fixed md:relative top-0 left-0 z-40 h-full w-64 md:w-[15%] bg-white shadow-lg
         transform transition-transform duration-300 ease-in-out

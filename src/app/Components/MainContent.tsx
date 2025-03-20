@@ -25,8 +25,6 @@ export default function MainContent({ toggleRightInfo, isRightInfoOpen }: MainCo
         >
           {isRightInfoOpen ? 'Hide Info' : 'View Info'}
         </button>
-        
-        {/* Adding more content to demonstrate scrolling */}
         <div className="mt-10 space-y-6">
           <h2 className="text-xl font-semibold">Additional Content</h2>
           <p className="text-gray-600">

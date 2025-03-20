@@ -20,7 +20,6 @@ export default function Home() {
 
   return (
     <div className="flex h-screen w-full overflow-hidden bg-gray-50">
-      {/* Mobile Hamburger Menu - Hidden when nav is open */}
       {!isLeftNavOpen && (
         <button 
           className="md:hidden fixed top-4 left-4 z-[60] p-2 rounded-lg bg-blue-500 text-white"
@@ -31,14 +30,8 @@ export default function Home() {
           </svg>
         </button>
       )}
-
-      {/* Left Nav - 15% - Visible on desktop, shown as overlay on mobile */}
       <LeftNav isOpen={isLeftNavOpen} toggleNav={toggleLeftNav} />
-
-      {/* Main Content - 70% - Always visible */}
       <MainContent toggleRightInfo={toggleRightInfo} isRightInfoOpen={isRightInfoOpen} />
-
-      {/* Right Info - 15% - Hidden until button is clicked */}
       <RightInfo isOpen={isRightInfoOpen} onClose={toggleRightInfo} />
     </div>
   );

@@ -34,7 +34,6 @@ export default function RightInfo({ isOpen, onClose }: RightInfoProps) {
               It dynamically expands when toggled on mobile.
             </p>
           </div>
-          {/* Additional content sections... */}
         </div>
       </div>
     </div>
